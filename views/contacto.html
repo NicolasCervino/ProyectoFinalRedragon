@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactanos</title>
+	<link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+	<!-- Link Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Link Normalize -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<!-- Link Estilo CSS -->
+	<link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+	<div>
+	<!-- Comienzo Header -->
+	<header>
+		<!-- Logo -->
+		<div class="header__logo">
+			<a href="../index.html">
+				<img src="../assets/img/logo_redragon.png" alt="logo">
+			</a>
+		</div>
+		<!-- Comienzo Nav -->
+		<nav>
+			<ul class="nav__ul">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="comunidad.html">Comunidad</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Comienzo Main -->
+	<main>
+		<div class="contacto">
+			<div class="contacto__titulo">
+				<h1>SOPORTE / CONTACTO</h1>
+			</div>
+			<div class="contacto__overlay"></div>
+		</div>
+		<div data-aos="fade-up" class="main__contacto">
+			<div class="main__contacto__subtitulo">
+				<h2>¿NECESITAS AYUDA?</h2>
+				<div class="main__contacto__texto">
+					<h3>Escríbenos y completa el formulario para que podamos ayudarte.</h3>
+				</div>
+			</div>
+			<!-- Formulario -->
+			<form action="#" class="main__contacto__form">
+				<!-- Pais -->
+				<label for="pais" class="contacto__form__input form__pais--gridArea">País:
+					<input type="text" placeholder="DÍNOS TU PAIS..." name="pais" required>
+				</label>
+				<!-- Ciudad -->
+				<label for="ciudad" class="contacto__form__input form__ciudad--gridArea">Ciudad:
+					<input type="text" placeholder="DÍNOS TU CIUDAD..." name="ciudad" required>
+				</label>
+				<!-- Nombre -->
+				<label for="nombre" class="contacto__form__input form__nombre--gridArea">Nombre:
+					<input type="text" placeholder="EJ. FELIPE" name="nombre" required>
+				</label>
+				<!-- Apellido -->
+				<label for="apellido" class="contacto__form__input form__apellido--gridArea">Apellido:
+					<input type="text" placeholder="EJ. RODRIGUEZ" name="apellido" required>
+				</label>
+				<!-- Email -->
+				<label for="email" class="contacto__form__input form__email--gridArea">Correo Electronico:
+					<input type="email" placeholder="EJ. FELIPE@MAIL.COM" name="email" required>
+				</label>
+				<!-- Consulta -->
+				<textarea name="Consulta" id="" class="form__consulta form__consulta--gridArea" placeholder="Motivo por el que necesitas comunicarte con nosotros" required></textarea>
+				<!-- Boton Enviar -->
+				<input type="submit" value="Enviar" class="form__boton form__boton--gridArea">
+			</form>
+		</div>
+	<!-- Comienzo Newsletter -->
+	<div class="newsletter">
+		<div class="newsletter__info">
+			<h3 class="newsletter__info__titulo">NOTICIAS REDRAGON</h3>
+			<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
+		</div>
+		<form action="#" class="newsletter__form">
+			<input type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
+			<button type="submit" class=newsletter__form__button>
+				<img src="../assets/img/newsletter/send_button.png">
+			</button>
+		</form>
+	</div>
+	<!-- Fin Newsletter -->
+	</main>
+	<!-- Comienzo Footer -->
+	<footer>
+		<!-- Logo Footer -->
+		<div class="footer__logo">
+			<img src="../assets/img/footer/logo_footer.png">
+		</div>
+		<!-- Redes Sociales -->
+		<div class="footer__social">
+			<!-- Facebook -->
+			<a href="https://redragon.es/facebook" target="_blank">
+				<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
+			</a>
+			<!-- Twitter -->
+			<a href="https://redragon.es/twitter" target="_blank">
+				<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
+			</a>
+			<!-- Instagram -->
+			<a href="https://redragon.es/IG" target="_blank">
+				<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
+			</a>
+			<!-- Twitch -->
+			<a href="https://redragon.es/twitch" target="_blank">
+				<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
+			</a>
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com" target="_blank">
+				<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
+			</a>
+		</div>
+	</footer>
+	</div>
+	<!-- BOTON PARA VOLVER AL INICIO -->
+	<a href="#" class="top">
+		<div>
+			<img src=https://icongr.am/fontawesome/angle-up.svg?size=30&color=ffffff>
+		</div>
+	<!-- AOS SCRIPT -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+    	AOS.init();
+	</script>
+</body>
+</html>
