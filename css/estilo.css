@@ -39,7 +39,7 @@ header {
 
 nav a {
 	text-decoration: none;
-	color: white;
+	color: var(--blanco);
 	font-weight: 600;
 }
 /*FIN HEADER*/
@@ -64,7 +64,7 @@ body {
 .inicio__titulo {
 	position: absolute;
 	bottom: 5px;
-	color: white;
+	color: var(--blanco);
 	margin-left: 1.5%;
 	z-index: 2;
 }
@@ -118,7 +118,7 @@ body {
 .producto h3 {
 	position: absolute;
 	bottom: 0;
-	color: white;
+	color: var(--blanco);
 }
 
 .producto:hover {
@@ -129,7 +129,7 @@ body {
 
 /*INICIO BLOG*/
 .blog__titulo {
-	color: white;
+	color: var(--blanco);
 	margin: 15px;
 }
 
@@ -142,7 +142,7 @@ body {
 }
 
 .blog__articulo {
-	background-color: white;
+	background-color: var(--blanco);
 }
 .articulo__info {
 	padding: 0 25px;
@@ -176,7 +176,7 @@ body {
 	position: absolute;
 	bottom: 15%; 
 	left: 3%;
-	color: white;
+	color: var(--blanco);
 	padding: 4px;
 	text-align: left;
 	z-index: 2;
@@ -213,7 +213,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto;
 	justify-items: center;
-	color: white;
+	color: var(--blanco);
 	margin-bottom: 70px;
 }
 
@@ -223,7 +223,7 @@ body {
 
 .main__productos img {
 	max-width: 400px;
-	border: 1px solid red;
+	border: 1px solid var(--rojo);
 }
 /*FIN PRODUCTOS*/
 
@@ -246,7 +246,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 3%;
-    color: white;
+    color: var(--blanco);
     text-align: left;
     padding: 4px;
     font-size: 30px;
@@ -259,17 +259,17 @@ body {
 }
 
 .comunidad__parrafo {
-	color: white;
+	color: var(--blanco);
 	padding: 15px;
 	font-size: 22px;
 }
 
 .comunidad__parrafo span {
-	color: red;
+	color: var(--rojo);
 }
 
 .reviews__titulo {
-	color: white;
+	color: var(--blanco);
 	margin-left: 20px;
 }
 
@@ -297,7 +297,7 @@ body {
 	position: absolute;
 	bottom: 1px;
 	left: 3%;
-	color: white;
+	color: var(--blanco);
 	font-size: 28px;
 }
 
@@ -309,7 +309,7 @@ body {
 }
 
 .nosotros__subtitulo {
-	color: white;
+	color: var(--blanco);
 	font-size: 26px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -344,7 +344,7 @@ body {
 
 .main__nosotros__texto1 {
 	font-size: 24px;
-	color: white;
+	color: var(--blanco);
 	line-height: 26px;
 	margin-bottom: 15px;
 }
@@ -355,7 +355,7 @@ body {
 
 .main__nosotros__texto2 {
 	font-size: 18px;
-	color: grey;
+	color: #808080;
 	line-height: 24px;
 }
 
@@ -376,7 +376,7 @@ body {
 	position: absolute;
 	bottom: 1px;
 	left: 3%;
-	color: white;
+	color: var(--blanco);
 	font-size: 28px;
 	z-index: 2;
 }
@@ -399,7 +399,7 @@ body {
 
 .main__contacto {
 	margin: 90px 0;
-	color: white;
+	color: var(--blanco);
 	display: grid;
 	grid-template-columns: 40% auto;
 	grid-template-rows: auto;
@@ -417,7 +417,7 @@ body {
 
 .main__contacto__texto {
 	font-size: 14px;
-	color: grey;
+	color: #808080;
 	line-height: 24px;
 }
 
@@ -448,8 +448,8 @@ body {
 	margin: 10px 0;
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid white;
-	color: white;
+	border-bottom: 1px solid var(--blanco);
+	color: var(--blanco);
 	padding: 6px 0;
 }
 
@@ -458,18 +458,18 @@ body {
 	max-width: 100%;
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid white;
-	color: white;
+	border-bottom: 1px solid var(--blanco);
+	color: var(--blanco);
 }
 
 .form__boton {
 	background: transparent;
-	color: white;
-	border: 2px solid white;
+	color: var(--blanco);
+	border: 2px solid var(--blanco);
 }
 
 .form__boton:hover {
-	background-color: red;
+	background-color: var(--rojo);
 }
 
 /* CLASES PARA ASIGNAR GRID AREA */
@@ -517,8 +517,9 @@ body {
 	max-height: fit-content;
 }
 
+
 .newsletter__info {
-	color: white;
+	color: var(--blanco);
 	text-align: left;
 	padding: 15px;
 	max-width: fit-content;
@@ -558,7 +559,7 @@ body {
 	padding: 10px 15px;
 	
 	background-color: transparent;
-	border: 1px solid white;
+	border: 1px solid var(--blanco);
 }
 
 .newsletter__form__button img {
@@ -566,13 +567,29 @@ body {
 }
 
 .newsletter__form__button:hover {
-	background-color: red;
+	background-color: var(--rojo);
 }
 
 /*FIN NEWSLETTER*/
+/*NEWSLETTER BOOTSTRAP*/
+.newsletter__bootstrap {
+	background-image: url("../assets/img/newsletter/newsletter.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.newsletter__form__input {
+	padding: 10px 15px;
+	font-size: 17px;
+	margin-right: 15px;
+	border: 1px solid transparent;
+	min-width: 220px;
+}
+
 
 /*INICIO FOOTER*/
-footer {
+.footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -719,7 +736,7 @@ footer {
 		height: 90vh;
 	}
 	.comunidad__titulo {
-		font-size: 27px;
+		font-size: 23px;
 		bottom: 5%;
 	}
 	.comunidad__reviews {
@@ -806,15 +823,6 @@ footer {
 	/*FOOTER MOBILE*/
 	footer {
 		flex-direction: column;
-	}
-
-	/* Oculto el titulo del footer en mobile */
-	.footer__titulo {
-		display:none
-	}
-
-	.footer__social img {
-		max-width: 20px;
 	}
 	/*FIN FOOTER MOBILE*/
 }
