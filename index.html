@@ -13,134 +13,202 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Link Normalize -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Link Bootstrap 4.6-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- Link Estilo CSS -->
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 	<!-- Comienzo Header -->
-	<header id="header">
-		<!-- Logo -->
-		<div class="header__logo">
-			<a href="index.html">
-				<img src="assets/img/logo_redragon.png" alt="logo">
-			</a>
+	<header class="container-fluid">
+	<!-- NAVBAR -->
+		<div class="row">
+			<div class="col-lg-12 col-12 p-0">
+				<nav class="navbar navbar-expand-sm fixed-top navbar-dark navbar__background">
+					<!-- LOGO NAVBAR -->
+					<a class="navbar-brand" href="#">
+						<img src="assets/img/logo_redragon.png" width="75px" class="d-inline-block align-top" alt="Logo Redragon">
+					</a>
+					<!-- BOTON NAVBAR -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+			  		</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<!-- ENLACES NAVBAR -->
+						<ul class="navbar-nav ml-auto text-center">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">Inicio</a>
+					      </li>
+					      <!-- ENLACE CON MENU -->
+					      <li class="nav-item pl-2 pl-sm-0 dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+					          Productos
+					        </a>
+					        <div class="dropdown-menu text-center text-sm-left" aria-labelledby="navbarDropdownMenuLink">
+					        	<a class="dropdown-item" href="views/teclados.html">Teclados</a>
+					        	<a class="dropdown-item" href="views/ratones.html">Ratones</a>
+					        	<a class="dropdown-item" href="views/audifonos.html">Audifonos</a>
+					        	<a class="dropdown-item" href="views/gabinetes.html">Gabinetes</a>
+					        	<a class="dropdown-item" href="views/productos.html">Productos</a>
+					        </div>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="views/comunidad.html">Comunidad</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="views/nosotros.html">Nosotros</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="views/contacto.html">Contacto</a>
+					      </li>
+					    </ul>
+					</div>
+				</nav>
+			</div>
 		</div>
-		<!-- Comienzo Nav -->
-		<nav>
-			<ul class="nav__ul">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="views/productos.html">Productos</a></li>
-				<li><a href="views/comunidad.html">Comunidad</a></li>
-				<li><a href="views/nosotros.html">Nosotros</a></li>
-				<li><a href="views/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
 	</header>
 	<!-- Comienzo Main -->
-	<main>
-		<div class="inicio">
-			<div data-aos="fade-up" class="inicio__titulo">
-				<h1>REDBORN:</h1>
-				<h2>LA GAIA YA ESTA ENTRE NOSOTROS </h2>
-			</div>
-			<div class="inicio__overlay"></div>
-		</div>
-		<div data-aos="fade-up" class="acceso__productos">
-			<div class="producto">
-				<a href="views/teclados.html">
-					<img src="assets/img/productos/teclados.jpg" alt="teclados" class="producto_img">
-				</a>
-				<h3>Teclados</h3>
-			</div>
-			<div class="producto">
-				<a href="views/ratones.html">
-					<img src="assets/img/productos/ratones.jpg" alt="ratones" class="producto_img">
-				</a>
-				<h3>Ratones</h3>
-			</div>
-			<div class="producto">
-				<a href="views/audifonos.html">
-					<img src="assets/img/productos/audifonos.jpg" alt="audifonos" class="producto_img">
-				</a>
-				<h3>Audifonos</h3>
-			</div>
-			<div class="producto">
-				<a href="views/gabinetes.html">
-					<img src="assets/img/productos/gabinetes.jpg" alt="gabinetes" class="producto_img">
-				</a>
-				<h3>Gabinetes</h3>
+	<main class="container-fluid">
+		<!-- Imagen Principal -->
+		<div class="row">
+			<div class="col-lg-12 col-12 inicio">
+				<div data-aos="fade-up" class="inicio__titulo">
+					<h1>REDBORN:</h1>
+					<h2>LA GAIA YA ESTA ENTRE NOSOTROS </h2>
+				</div>
+				<div class="inicio__overlay"></div>
 			</div>
 		</div>
-		<h3 class="blog__titulo">BLOG</h3>
-		<div data-aos="fade-up" class="blog">
-			<!-- ARTICULO 1 -->
-			<div class="blog__articulo">
-				<img src="assets/img/index/articulo1.jpg">
-				<div class="articulo__info">
-					<h3>Un reconocimiento a los abanderados de Redragon en Perú</h3>
-					<p>Nuestros aliados de SSImports decidieron premiar a las tiendas que llevaron la bandera de Redragon a lo más alto en el gran país andino. ¡Un merecido agasajo a la pasión por el gaming!</p>
+		<!-- Imagenes Productos -->
+		<div data-aos="fade-up" class="row pt-4 pb-3 px-3">
+			<!-- Producto 1 -->
+			<div class="col-sm-6 col-md-3 col-12 p-0">
+				<div class="producto">
+					<a href="views/teclados.html">
+						<img src="assets/img/productos/teclados.jpg" alt="teclados" class="producto_img">
+					</a>
+					<h3>Teclados</h3>
 				</div>
 			</div>
-			<!-- ARTICULO 2 -->
-			<div class="blog__articulo">
-				<img src="assets/img/index/articulo2.jpg">
-				<div class="articulo__info">
-					<h3>REDRAGON + HISPAMICRO: A LA CONQUISTA DE ESPAÑA.</h3>
-					<p>Redragon se une a una potencia española líder en ventas al canal Hispamicro, y continúa avanzando firme en su misión de abastecer a la comunidad gamer europea.</p>
+			<!-- Producto 2 -->
+			<div class="col-sm-6 col-md-3 col-12 p-0">
+				<div class="producto">
+					<a href="views/ratones.html">
+						<img src="assets/img/productos/ratones.jpg" alt="ratones" class="producto_img">
+					</a>
+					<h3>Ratones</h3>
 				</div>
 			</div>
-			<!-- ARTICULO 3 -->
-			<div class="blog__articulo">
-				<img src="assets/img/index/articulo3.jpg">
-				<div class="articulo__info">
-					<h3>Redragon y Coca-Cola le ponen acción al verano</h3>
-					<p>Las dos marcas se unen para llevar desafíos gamers a algunos de los puntos turísticos más concurridos de las sierras de Córdoba, Argentina durante enero. ¿Vas a estar ahí?</p>
+			<!-- Producto 3 -->
+			<div class="col-sm-6 col-md-3 col-12 p-0">
+				<div class="producto">
+					<a href="views/audifonos.html">
+						<img src="assets/img/productos/audifonos.jpg" alt="audifonos" class="producto_img">
+					</a>
+					<h3>Audifonos</h3>
+				</div>
+			</div>
+			<!-- Producto 4 -->
+			<div class="col-sm-6 col-md-3 col-12 p-0">
+				<div class="producto">
+					<a href="views/gabinetes.html">
+						<img src="assets/img/productos/gabinetes.jpg" alt="gabinetes" class="producto_img">
+					</a>
+					<h3>Gabinetes</h3>
 				</div>
 			</div>
 		</div>
-	<!-- Comienzo Newsletter -->
-	<div class="newsletter">
-		<div class="newsletter__info">
-			<h3 class="newsletter__info__titulo">NOTICIAS REDRAGON</h3>
-			<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
+		<!-- Titulo Blog -->
+		<div class="row">
+			<div class="col-12">
+				<h3 class="blog__titulo">BLOG</h3>
+			</div>
 		</div>
-		<form action="#" class="newsletter__form">
-			<input type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
-			<button type="submit" class=newsletter__form__button>
-				<img src="assets/img/newsletter/send_button.png">
-			</button>
-		</form>
-	</div>
-	<!-- Fin Newsletter -->
+		<!-- Articulos Blog -->
+		<div class="row py-3 px-2" data-aos="fade-up">
+			<div class="col-12 card-group">
+			  <!-- Articulo 1 -->
+			  <div class="card">
+			    <img src="assets/img/index/articulo1.jpg" class="card-img-top" alt="redragon Perú">
+			    <div class="card-body">
+			      <h5 class="card-title articulo__titulo">Un reconocimiento a los abanderados de Redragon en Perú</h5>
+			      <p class="card-text">Nuestros aliados de SSImports decidieron premiar a las tiendas que llevaron la bandera de Redragon a lo más alto en el gran país andino. ¡Un merecido agasajo a la pasión por el gaming!</p>
+			    </div>
+			  </div>
+			  <!-- Articulo 2 -->
+			  <div class="card">
+			    <img src="assets/img/index/articulo2.jpg" class="card-img-top" alt="redragon hispamicro">
+			    <div class="card-body">
+			      <h5 class="card-title articulo__titulo">REDRAGON + HISPAMICRO: A LA CONQUISTA DE ESPAÑA.</h5>
+			      <p class="card-text">Redragon se une a una potencia española líder en ventas al canal Hispamicro, y continúa avanzando firme en su misión de abastecer a la comunidad gamer europea.</p>
+			    </div>
+			  </div>
+			  <!-- Articulo 3 -->
+			  <div class="card">
+			    <img src="assets/img/index/articulo3.jpg" class="card-img-top" alt="redragon coca cola">
+			    <div class="card-body">
+			      <h5 class="card-title articulo__titulo">Redragon y Coca-Cola le ponen acción al verano</h5>
+			      <p class="card-text">Las dos marcas se unen para llevar desafíos gamers a algunos de los puntos turísticos más concurridos de las sierras de Córdoba, Argentina durante enero. ¿Vas a estar ahí?</p>
+			    </div>
+			  </div>
+			</div>
+		</div>
 	</main>
-	<!-- Comienzo Footer -->
-	<footer class="footer">
-		<!-- Logo Footer -->
-		<div class="footer__logo">
-			<img src="assets/img/footer/logo_footer.png">
+	<!-- NEWSLETTER -->
+	<div class="newsletter__bootstrap container-fluid pt-3 pb-3">
+		<div class="row d-flex justify-content-center align-items-center">
+			<!-- INFO NEWSLETTER -->
+			<div class="col-sm-5 col-12">
+				<div class="newsletter__info">
+					<h3>NOTICIAS REDRAGON</h3>
+					<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
+				</div>
+			</div>
+			<!-- FORM NEWSLETTER -->
+			<div class="d-flex justify-content-center align-items-center col-sm-5 col-12">
+				<form class="d-flex" action="#">
+					<input class="newsletter__form__input" type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
+					<button class="newsletter__form__button" type="submit">
+						<img src="assets/img/newsletter/send_button.png">
+					</button>
+				</form>
+			</div>
 		</div>
-		<!-- Redes Sociales -->
-		<div class="footer__social">
-			<!-- Facebook -->
-			<a href="https://redragon.es/facebook" target="_blank">
-				<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
-			</a>
-			<!-- Twitter -->
-			<a href="https://redragon.es/twitter" target="_blank">
-				<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
-			</a>
-			<!-- Instagram -->
-			<a href="https://redragon.es/IG" target="_blank">
-				<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
-			</a>
-			<!-- Twitch -->
-			<a href="https://redragon.es/twitch" target="_blank">
-				<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
-			</a>
-			<!-- LinkedIn -->
-			<a href="https://www.linkedin.com" target="_blank">
-				<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
-			</a>
+	</div>
+	<!-- FOOTER -->
+	<footer class="container-fluid pb-4 pt-4">
+		<div class="row">
+			<!-- LOGO -->
+			<div class="col-sm-6 col-12">
+				<div class="d-flex justify-content-center">
+					<img src="assets/img/footer/logo_footer.png">
+				</div>
+			</div>
+			<!-- REDES SOCIALES -->
+			<div class="col-sm-6 col-12">
+				<div class="d-flex justify-content-center footer__social">
+					<!-- Facebook -->
+					<a href="https://redragon.es/facebook" target="_blank">
+						<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
+					</a>
+					<!-- Twitter -->
+					<a href="https://redragon.es/twitter" target="_blank">
+						<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
+					</a>
+					<!-- Instagram -->
+					<a href="https://redragon.es/IG" target="_blank">
+						<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
+					</a>
+					<!-- Twitch -->
+					<a href="https://redragon.es/twitch" target="_blank">
+						<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
+					</a>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com" target="_blank">
+						<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- AOS SCRIPT -->
@@ -148,5 +216,8 @@
 	<script>
     	AOS.init();
 	</script>
+	<!-- JS BOOTSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
