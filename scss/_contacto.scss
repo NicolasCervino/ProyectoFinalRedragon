@@ -1,0 +1,143 @@
+// INICIO CONTACTO
+.contacto {
+	position: relative;
+	background-image: url(../assets/img/contacto/contacto_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+}
+
+.contacto__titulo {
+	position: absolute;
+	bottom: 1px;
+	left: 3%;
+	color: $colorSecundario;
+	font-size: 28px;
+	z-index: 2;
+}
+
+.contacto__titulo h1 {
+	font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contacto__overlay {
+	background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+}
+
+.main__contacto {
+	margin: 90px 0;
+	color: $colorSecundario;
+	display: grid;
+	grid-template-columns: 40% auto;
+	grid-template-rows: auto;
+	align-items: start;
+	justify-items: center;
+	gap: 14%;
+}
+
+.main__contacto__subtitulo {
+	max-width: 80%;
+	font-size: 20px;
+	line-height: 30px;
+
+}
+
+.main__contacto__texto {
+	font-size: 14px;
+	color: #808080;
+	line-height: 24px;
+}
+
+.main__contacto__form {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+	"pais ciudad"
+	"nombre apellido"
+	"email email"
+	"mensaje mensaje"
+	"enviar enviar";
+	gap: 15px;
+	padding: 25px;
+	width: 80%;
+}
+
+// ESTO SE REFIERE AL LABEL
+.contacto__form__input {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+// ESTO SE REFIERE AL INPUT
+.contacto__form__input input {
+	margin: 10px 0;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid $colorSecundario;
+	color: $colorSecundario;
+	padding: 6px 0;
+}
+
+.form__consulta {
+	resize: none;
+	max-width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid $colorSecundario;
+	color: $colorSecundario;
+}
+
+.form__boton {
+	background: transparent;
+	color: $colorSecundario;
+	border: 2px solid $colorSecundario;
+}
+
+.form__boton:hover {
+	background-color: $colorPrimario;
+}
+
+/* CLASES PARA ASIGNAR GRID AREA */
+.form__pais--gridArea {
+	grid-area: pais;
+}
+
+.form__ciudad--gridArea {
+	grid-area: ciudad;
+}
+
+.form__nombre--gridArea {
+	grid-area: nombre;
+}
+
+.form__apellido--gridArea {
+	grid-area: apellido;
+}
+
+.form__email--gridArea {
+	grid-area: email;
+}
+
+.form__consulta--gridArea {
+	grid-area: mensaje;
+}
+
+.form__boton--gridArea {
+	grid-area: enviar;
+}
+
+// FIN CLASES PARA ASIGNAR GRID AREA
+
+// FIN CONTACTO

@@ -1,869 +1,633 @@
-/*Fuente Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
-
-:root {
-    --rojo: #e50b22;
-    --blanco: #ffffff;
-}
-
-* {
-	font-family: 'Quicksand', sans-serif;
-	scroll-behavior: smooth;
-}
-
-
-/*INICIO HEADER*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 .header__logo img {
-	max-width: 75px;
-	padding: 10px;
-}
+  max-width: 75px;
+  padding: 10px; }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	position: fixed;
-	width: 100%;
-	background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%);
-	top: 0;
-	z-index: 999;
-}
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%);
+  top: 0;
+  z-index: 999; }
 
 .nav__ul {
-	display: flex;
-	list-style: none;
-}
+  display: flex;
+  list-style: none; }
 
 .nav__ul li {
-	padding: 8px;
-}
+  padding: 8px; }
 
 nav a {
-	text-decoration: none;
-	color: var(--blanco);
-	font-weight: 600;
-}
-/*FIN HEADER*/
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600; }
 
-body {
-	/*background: rgb(20,20,22);	                                                 
-	background: radial-gradient(circle, rgba(20,20,22,1) 43%, rgba(0,0,0,1) 100%);*/
-	background: black;
-}
+.navbar__background {
+  background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%); }
 
-/*INICIO INDEX*/
-.inicio {
-	position: relative;
-	background-image: url("../assets/img/index/main_image.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 85vh;
-}
+.navbar-collapse {
+  background-color: #202020; }
 
-.inicio__titulo {
-	position: absolute;
-	bottom: 5px;
-	color: var(--blanco);
-	margin-left: 1.5%;
-	z-index: 2;
-}
+.dropdown-menu {
+  background-color: #202020;
+  border: none; }
 
-.inicio__titulo h1 {
-	margin-bottom: 0;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 44px;
-}
+.dropdown-item {
+  color: #ffffff; }
 
-.inicio__titulo h2 {
-	margin-top: 0;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 44px;
-}
-.inicio__overlay {
-	background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    z-index: 1;
-}
+.dropdown-item:hover {
+  background-color: #e50b22;
+  color: #ffffff; }
 
-.producto_img {
-	width: 100%;
-	height: auto;
-}
-
-.producto {
-	display: flex;
-	position: relative;
-	justify-content: center;
-	transition: transform .5s;
-	z-index: 2;
-}
-
-.producto h3 {
-	position: absolute;
-	bottom: 0;
-	color: var(--blanco);
-	font-size: 20px;
-}
-
-.producto:hover {
-	transform: translateY(-50px);
-}
-
-/*FIN PRODUCTOS*/
-
-/*INICIO BLOG*/
-.blog__titulo {
-	color: var(--blanco);
-	margin: 15px;
-}
-
-.articulo__titulo {
-	letter-spacing: 0.1rem;
-}
-
-/*FIN BLOG*/
-
-/*FIN INDEX*/
-
-/*INICIO PRODUCTOS*/
-.main__video {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-
-.main__video video {
-	max-width: 100%;
-}
-
-.main__video__titulo {
-	position: absolute;
-	bottom: 15%; 
-	left: 3%;
-	color: var(--blanco);
-	padding: 4px;
-	text-align: left;
-	z-index: 2;
-}
-
-.main__video__titulo h1 {
-	font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 1.2;
-}
-
-/*OVERLAY PRODUCTOS*/
-
-.video__overlay {
-	background: linear-gradient(0deg, black 15%, transparent);
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-/*IMAGEN PARA MODO MOBILE, oculta en desktop*/
-
-.main__imagen_mobile {
-	display: none;
-}
-
-.main__productos {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto;
-	justify-items: center;
-	color: var(--blanco);
-	margin-bottom: 70px;
-}
-
-.main__productos__producto {
-	width: fit-content;
-}
-
-.main__productos img {
-	max-width: 400px;
-	border: 1px solid var(--rojo);
-}
-/*FIN PRODUCTOS*/
-
-/* INICIO COMUNIDAD */
-.comunidad {
-    position: relative;
-    text-align: center;
-    background-image: url("../assets/img/comunidad/comunidad_background.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 85vh;
-}
-.comunidad img {
-	max-width: 100%;
-}
-
-.comunidad__titulo {
-    position: absolute;
-    bottom: 20px;
-    left: 3%;
-    color: var(--blanco);
-    text-align: left;
-    padding: 4px;
-    font-size: 30px;
-}
-
-.comunidad__titulo h1 {
-	font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-}
-
-.comunidad__parrafo {
-	color: var(--blanco);
-	padding: 15px;
-	font-size: 22px;
-}
-
-.comunidad__parrafo span {
-	color: var(--rojo);
-}
-
-.reviews__titulo {
-	color: var(--blanco);
-	margin-left: 20px;
-}
-
-.comunidad__reviews {
-	display: flex;
-	margin: 50px 20px;
-	justify-content: space-around;
-}
-
-/* FIN COMUNIDAD */
-
-/*INICIO NOSOTROS*/
-.nosotros {
-	position: relative;
-	background-image: url(../assets/img/nosotros/nosotros_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 85vh;
-
-}
-
-.nosotros__titulo {
-	position: absolute;
-	bottom: 1px;
-	left: 3%;
-	color: var(--blanco);
-	font-size: 28px;
-}
-
-.nosotros__titulo h1 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-
-}
-
-.nosotros__subtitulo {
-	color: var(--blanco);
-	font-size: 26px;
-	margin-left: 20px;
-	margin-right: 20px;
-	grid-area: sub;
-
-}
-
-.main__nosotros {
-	display: grid;
-	grid-template-columns: 45% 45%;
-	grid-template-rows: auto;
-	column-gap: 5%;
-	margin-bottom: 30px;
-	grid-template-areas:
-		"sub sub"
-		"img info";
-}
-
-.main__nosotros img {
-	max-width: 100%;
-	padding-left: 19px;
-	grid-area: img;
-}
-
-.main__nosotros__info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	max-width: 100%;
-	grid-area: info;
-}
-
-.main__nosotros__texto1 {
-	font-size: 24px;
-	color: var(--blanco);
-	line-height: 26px;
-	margin-bottom: 15px;
-}
-
-.main__nosotros__texto1 p {
-	margin: 0;
-}
-
-.main__nosotros__texto2 {
-	font-size: 18px;
-	color: #808080;
-	line-height: 24px;
-}
-
-/*FIN NOSOTROS*/
-
-/*INICIO CONTACTO*/
-.contacto {
-	position: relative;
-	background-image: url(../assets/img/contacto/contacto_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 95vh;
-}
-
-.contacto__titulo {
-	position: absolute;
-	bottom: 1px;
-	left: 3%;
-	color: var(--blanco);
-	font-size: 28px;
-	z-index: 2;
-}
-
-.contacto__titulo h1 {
-	font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-}
-
-.contacto__overlay {
-	background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    z-index: 1;
-}
-
-.main__contacto {
-	margin: 90px 0;
-	color: var(--blanco);
-	display: grid;
-	grid-template-columns: 40% auto;
-	grid-template-rows: auto;
-	align-items: start;
-	justify-items: center;
-	gap: 14%;
-}
-
-.main__contacto__subtitulo {
-	max-width: 80%;
-	font-size: 20px;
-	line-height: 30px;
-
-}
-
-.main__contacto__texto {
-	font-size: 14px;
-	color: #808080;
-	line-height: 24px;
-}
-
-.main__contacto__form {
-	display: grid;
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas:
-	"pais ciudad"
-	"nombre apellido"
-	"email email"
-	"mensaje mensaje"
-	"enviar enviar";
-	gap: 15px;
-	padding: 25px;
-	width: 80%;
-}
-
-/* ESTO SE REFIERE AL LABEL */
-.contacto__form__input {
-	display: flex;
-	flex-direction: column;
-	max-width: 100%;
-}
-
-/* ESTO SE REFIERE AL INPUT */
-.contacto__form__input input {
-	margin: 10px 0;
-	background: transparent;
-	border: none;
-	border-bottom: 1px solid var(--blanco);
-	color: var(--blanco);
-	padding: 6px 0;
-}
-
-.form__consulta {
-	resize: none;
-	max-width: 100%;
-	background: transparent;
-	border: none;
-	border-bottom: 1px solid var(--blanco);
-	color: var(--blanco);
-}
-
-.form__boton {
-	background: transparent;
-	color: var(--blanco);
-	border: 2px solid var(--blanco);
-}
-
-.form__boton:hover {
-	background-color: var(--rojo);
-}
-
-/* CLASES PARA ASIGNAR GRID AREA */
-.form__pais--gridArea {
-	grid-area: pais;
-}
-
-.form__ciudad--gridArea {
-	grid-area: ciudad;
-}
-
-.form__nombre--gridArea {
-	grid-area: nombre;
-}
-
-.form__apellido--gridArea {
-	grid-area: apellido;
-}
-
-.form__email--gridArea {
-	grid-area: email;
-}
-
-.form__consulta--gridArea {
-	grid-area: mensaje;
-}
-
-.form__boton--gridArea {
-	grid-area: enviar;
-}
-
-/* FIN CLASES PARA ASIGNAR GRID AREA */
-
-/*FIN CONTACTO*/
-
-/*INICIO NEWSLETTER*/
 .newsletter {
-	display: flex;
-	background-image: url("../assets/img/newsletter/newsletter.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	justify-content: space-around;
-	max-width: 100%;
-	max-height: fit-content;
-}
-
+  display: flex;
+  background-image: url("../assets/img/newsletter/newsletter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  max-width: 100%;
+  max-height: fit-content; }
 
 .newsletter__info {
-	color: var(--blanco);
-	text-align: left;
-	padding: 15px;
-	max-width: fit-content;
-}
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  max-width: fit-content; }
 
 .newsletter__info__titulo {
-	font-size: 24px;
-	padding: 4px;
-}
+  font-size: 24px;
+  padding: 4px; }
 
 .newsletter__info p {
-	font-size: 20px;
-	max-width: 560px;
-	font-weight: 300;
-}
+  font-size: 20px;
+  max-width: 560px;
+  font-weight: 300; }
 
 .newsletter__form {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 50px;
-	
-}
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px; }
 
 .newsletter__form input {
-	display: inline-block;
-	padding: 10px 15px;
-	font-size: 20px;
-	margin-right: 15px;
-	border: 1px solid transparent;
-	width: 272px;
-}
-
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-right: 15px;
+  border: 1px solid transparent;
+  width: 272px; }
 
 .newsletter__form__button {
-	display: inline-block;
-	padding: 10px 15px;
-	
-	background-color: transparent;
-	border: 1px solid var(--blanco);
-}
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #ffffff; }
 
 .newsletter__form__button img {
-	max-width: 22px;
-}
+  max-width: 22px; }
 
 .newsletter__form__button:hover {
-	background-color: var(--rojo);
-}
+  background-color: #e50b22; }
 
 /*FIN NEWSLETTER*/
 /*NEWSLETTER BOOTSTRAP*/
 .newsletter__bootstrap {
-	background-image: url("../assets/img/newsletter/newsletter.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+  background-image: url("../assets/img/newsletter/newsletter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .newsletter__form__input {
-	padding: 10px 15px;
-	font-size: 17px;
-	margin-right: 15px;
-	border: 1px solid transparent;
-	min-width: 220px;
-}
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-right: 15px;
+  border: 1px solid transparent;
+  min-width: 220px; }
 
-
-/*INICIO FOOTER*/
 .footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: black;
-	height: 150px
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  height: 150px; }
 
 .footer__social img {
-	padding: 3px;
-	margin: 3px;
-}
+  padding: 3px;
+  margin: 3px; }
 
 .footer__social a {
-	text-decoration: none;
-}
-/*FIN FOOTER*/
+  text-decoration: none; }
 
+.inicio {
+  position: relative;
+  background-image: url("../assets/img/index/main_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh; }
 
-/* TECLADOS */
-.navbar__background {
-    background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%);
-}
+.inicio__titulo {
+  position: absolute;
+  bottom: 5px;
+  color: #ffffff;
+  margin-left: 1.5%;
+  z-index: 2; }
 
-.navbar-collapse {
-    background-color: #202020;
-}
+.inicio__titulo h1 {
+  margin-bottom: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px; }
 
-.dropdown-menu {
-	background-color: #202020;
-	border: none;
-}
+.inicio__titulo h2 {
+  margin-top: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 44px; }
 
-.dropdown-item {
-	color: var(--blanco);
-}
-.dropdown-item:hover {
-	background-color: var(--rojo);
-	color: var(--blanco);
-}
+.inicio__overlay {
+  background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1; }
+
+.producto_img {
+  width: 100%;
+  height: auto; }
+
+.producto {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  transition: transform .5s;
+  z-index: 2; }
+
+.producto h3 {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 20px; }
+
+.producto:hover {
+  transform: translateY(-50px); }
+
+.blog__titulo {
+  color: #ffffff;
+  margin: 15px; }
+
+.articulo__titulo {
+  letter-spacing: 0.1rem; }
+
+.main__video {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.main__video video {
+  max-width: 100%; }
+
+.main__video__titulo {
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  color: #ffffff;
+  padding: 4px;
+  text-align: left;
+  z-index: 2; }
+
+.main__video__titulo h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2; }
+
+.video__overlay {
+  background: linear-gradient(0deg, #000000 15%, transparent);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.main__imagen_mobile {
+  display: none; }
+
+.main__productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  color: #ffffff;
+  margin-bottom: 70px; }
+
+.main__productos__producto {
+  width: fit-content; }
+
+.main__productos img {
+  max-width: 400px;
+  border: 1px solid #e50b22; }
+
+.comunidad {
+  position: relative;
+  text-align: center;
+  background-image: url("../assets/img/comunidad/comunidad_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh; }
+
+.comunidad img {
+  max-width: 100%; }
+
+.comunidad__titulo {
+  position: absolute;
+  bottom: 20px;
+  left: 3%;
+  color: #ffffff;
+  text-align: left;
+  padding: 4px;
+  font-size: 30px; }
+
+.comunidad__titulo h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold; }
+
+.comunidad__parrafo {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 22px; }
+
+.comunidad__parrafo span {
+  color: #e50b22; }
+
+.reviews__titulo {
+  color: #ffffff;
+  margin-left: 20px; }
+
+.comunidad__reviews {
+  display: flex;
+  margin: 50px 20px;
+  justify-content: space-around; }
+
+.nosotros {
+  position: relative;
+  background-image: url(../assets/img/nosotros/nosotros_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh; }
+
+.nosotros__titulo {
+  position: absolute;
+  bottom: 1px;
+  left: 3%;
+  color: #ffffff;
+  font-size: 28px; }
+
+.nosotros__titulo h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold; }
+
+.nosotros__subtitulo {
+  color: #ffffff;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-area: sub; }
+
+.main__nosotros {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  margin-bottom: 30px;
+  grid-template-areas: "sub sub" "img info"; }
+
+.main__nosotros img {
+  max-width: 100%;
+  padding-left: 19px;
+  grid-area: img; }
+
+.main__nosotros__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100%;
+  grid-area: info; }
+
+.main__nosotros__texto1 {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 26px;
+  margin-bottom: 15px; }
+
+.main__nosotros__texto1 p {
+  margin: 0; }
+
+.main__nosotros__texto2 {
+  font-size: 18px;
+  color: #808080;
+  line-height: 24px; }
+
+.contacto {
+  position: relative;
+  background-image: url(../assets/img/contacto/contacto_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95vh; }
+
+.contacto__titulo {
+  position: absolute;
+  bottom: 1px;
+  left: 3%;
+  color: #ffffff;
+  font-size: 28px;
+  z-index: 2; }
+
+.contacto__titulo h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold; }
+
+.contacto__overlay {
+  background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1; }
+
+.main__contacto {
+  margin: 90px 0;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: center;
+  gap: 14%; }
+
+.main__contacto__subtitulo {
+  max-width: 80%;
+  font-size: 20px;
+  line-height: 30px; }
+
+.main__contacto__texto {
+  font-size: 14px;
+  color: #808080;
+  line-height: 24px; }
+
+.main__contacto__form {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "pais ciudad" "nombre apellido" "email email" "mensaje mensaje" "enviar enviar";
+  gap: 15px;
+  padding: 25px;
+  width: 80%; }
+
+.contacto__form__input {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; }
+
+.contacto__form__input input {
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 6px 0; }
+
+.form__consulta {
+  resize: none;
+  max-width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff; }
+
+.form__boton {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff; }
+
+.form__boton:hover {
+  background-color: #e50b22; }
+
+/* CLASES PARA ASIGNAR GRID AREA */
+.form__pais--gridArea {
+  grid-area: pais; }
+
+.form__ciudad--gridArea {
+  grid-area: ciudad; }
+
+.form__nombre--gridArea {
+  grid-area: nombre; }
+
+.form__apellido--gridArea {
+  grid-area: apellido; }
+
+.form__email--gridArea {
+  grid-area: email; }
+
+.form__consulta--gridArea {
+  grid-area: mensaje; }
+
+.form__boton--gridArea {
+  grid-area: enviar; }
 
 .carousel-item img {
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  object-position: 50% 50%; }
 
 .carousel-caption {
-    left: 2%;
-}
+  left: 2%; }
 
 .carousel-caption h2 {
-    margin-bottom: 0;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 44px;            
-}
-.carousel-caption h3 { 
-    margin-top: 0;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 44px;
-}
+  margin-bottom: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px; }
+
+.carousel-caption h3 {
+  margin-top: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 44px; }
 
 .teclados__titulo h1 {
-    font-family: "Montserrat";
-    color: var(--blanco);
-    padding: 15px;
-}
-/* MEDIA QUERYS */
-/* mobile*/
+  font-family: "Montserrat";
+  color: #ffffff;
+  padding: 15px; }
+
 @media only screen and (max-width: 426px) {
-	header {
-		flex-direction: column;
-	}
-	nav {
-		display: none;
-		/*Esto es temporal hasta implementar menu mobile*/
-	}
-	.nav__ul {
-		flex-direction: column;
-	}
+  header {
+    flex-direction: column; }
+  nav {
+    display: none;
+    /*Esto es temporal hasta implementar menu mobile*/ }
+  .nav__ul {
+    flex-direction: column; }
+  .inicio {
+    background-image: url("../assets/img/index/main_image_mobile.jpg");
+    height: 100vh;
+    /*CAMBIO DE IMAGEN INICIO*/ }
+  .inicio__titulo {
+    margin-left: 5%; }
+  .inicio__titulo h1 {
+    font-size: 30px;
+    line-height: 30px; }
+  .inicio__titulo h2 {
+    font-size: 30px;
+    line-height: 30px; }
+  .blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+  /*FIN INDEX MOBILE*/
+  /*PRODUCTOS MOBILE*/
+  /*CAMBIO DE VIDEO A IMAGEN*/
+  .main__video video {
+    display: none; }
+  .main__imagen_mobile {
+    display: block;
+    width: 100%;
+    position: relative; }
+  .main__imagen_mobile img {
+    width: 100%;
+    min-height: 680px;
+    object-fit: cover; }
+  .video__overlay {
+    height: 15%; }
+  .main__video__titulo {
+    bottom: 2%; }
+  .main__video__titulo h1 {
+    font-size: 40px; }
+  .main__productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto; }
+  .main__productos img {
+    max-width: 260px; }
+  /*FIN PRODUCTOS MOBILE*/
+  /*COMUNIDAD MOBILE*/
+  .comunidad {
+    background-image: url(../assets/img/comunidad/comunidad_background_mobile.jpg);
+    height: 90vh; }
+  .comunidad__titulo {
+    font-size: 23px;
+    bottom: 5%; }
+  .comunidad__reviews {
+    flex-direction: column;
+    align-items: center; }
+  .comunidad__reviews iframe {
+    width: 380px; }
+  /*FIN COMUNIDAD MOBILE*/
+  /*NOSOTROS MOBILE*/
+  .nosotros {
+    background-image: url(../assets/img/nosotros/nosotros_background_mobile.jpg); }
+  .nosotros__titulo {
+    font-size: 22px; }
+  .main__nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center; }
+  .main__nosotros img {
+    max-width: 90%;
+    padding: 0; }
+  .main__nosotros__info {
+    padding: 5%;
+    justify-content: normal; }
+  .main__nosotros__texto1 {
+    font-size: 20px; }
+  .main__nosotros__texto2 {
+    font-size: 15px; }
+  /*FIN NOSOTROS MOBILE*/
+  /* CONTACTO MOBILE */
+  .contacto {
+    background-image: url(../assets/img/contacto/contacto_background_mobile.jpg); }
+  .contacto__titulo {
+    font-size: 30px; }
+  .main__contacto {
+    grid-template-rows: 20% auto;
+    grid-template-columns: auto;
+    margin: 10% 0 25% 0; }
+  .main__contacto__subtitulo {
+    text-align: center;
+    max-width: 100%; }
+  .main__contacto__form {
+    justify-content: center; }
+  .newsletter {
+    flex-direction: column;
+    align-items: center; }
+  .newsletter__form {
+    padding: 20px 0; }
+  .newsletter__form input {
+    width: 180px; }
+  footer {
+    flex-direction: column; }
+  /*FIN FOOTER MOBILE*/ }
 
-	/*INDEX MOBILE*/
-	.inicio {
-		background-image: url("../assets/img/index/main_image_mobile.jpg");
-		height: 100vh;
-		/*CAMBIO DE IMAGEN INICIO*/
-	}
-	.inicio__titulo {
-		margin-left: 5%;
-	}
-	.inicio__titulo h1 {
-		font-size: 30px;
-		line-height: 30px;
-	}
-	.inicio__titulo h2 {
-		font-size: 30px;
-		line-height: 30px;
-	}
-	.blog {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 1fr);
-	
-	}
-	/*FIN INDEX MOBILE*/
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .inicio {
+    background-image: url(../assets/img/index/main_image_mobile.jpg);
+    height: 100vh; }
+  .main__video__titulo h1 {
+    font-size: 40px; }
+  .main__productos img {
+    max-width: 320px; }
+  .comunidad__reviews iframe {
+    width: 350px; }
+  .main__nosotros {
+    grid-template-columns: 55% 39%; }
+  .main__nosotros__texto1 {
+    font-size: 18px; }
+  .main__nosotros__texto2 {
+    font-size: 14px; }
+  .main__nosotros__info {
+    max-height: fit-content; }
+  .main__contacto {
+    width: 75%; } }
 
-	/*PRODUCTOS MOBILE*/
-
-	/*CAMBIO DE VIDEO A IMAGEN*/
-	.main__video video {
-    	display: none;
-	}
-
-	.main__imagen_mobile {
-		display: block;
-		width: 100%;
-		position: relative;
-	}
-
-	.main__imagen_mobile img {
-		width: 100%;
-		min-height: 680px;
-		object-fit: cover;
-	}
-	.video__overlay {
-		height: 15%;
-	}
-
-	.main__video__titulo {
-		bottom: 2%;
-	}
-	.main__video__titulo h1 {
-		font-size: 40px;
-	}
-
-	.main__productos {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto auto auto;
-	}
-
-	.main__productos img {
-		max-width: 260px;
-	}
-	/*FIN PRODUCTOS MOBILE*/
-
-	/*COMUNIDAD MOBILE*/
-	.comunidad {
-		background-image: url(../assets/img/comunidad/comunidad_background_mobile.jpg);
-		height: 90vh;
-	}
-	.comunidad__titulo {
-		font-size: 23px;
-		bottom: 5%;
-	}
-	.comunidad__reviews {
-		flex-direction: column;
-		align-items: center;
-	}
-	.comunidad__reviews iframe {
-		width: 380px;
-	}
-	/*FIN COMUNIDAD MOBILE*/
-
-	/*NOSOTROS MOBILE*/
-	.nosotros {
-		background-image: url(../assets/img/nosotros/nosotros_background_mobile.jpg);
-	}
-	.nosotros__titulo {
-		font-size: 22px;
-	}
-	.main__nosotros {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto;
-		justify-items: center;
-	}
-
-	.main__nosotros img {
-    	max-width: 90%;
-    	padding: 0;
-	}
-
-	.main__nosotros__info {
-		padding: 5%;
-		justify-content: normal;
-	}
-	.main__nosotros__texto1 {
-		font-size: 20px;
-	}
-
-	.main__nosotros__texto2 {
-		font-size: 15px;
-	}
-
-	/*FIN NOSOTROS MOBILE*/
-
-	/* CONTACTO MOBILE */
-	.contacto {
-		background-image: url(../assets/img/contacto/contacto_background_mobile.jpg);
-	}
-
-	.contacto__titulo {
-		font-size: 30px;
-	}
-
-	.main__contacto {
-		grid-template-rows: 20% auto;
-		grid-template-columns: auto;
-		margin: 10% 0 25% 0;
-	}
-
-	.main__contacto__subtitulo {
-		text-align: center;
-		max-width: 100%;
-	}
-	.main__contacto__form {
-		justify-content: center;
-	}
-
-	/* FIN CONTACTO MOBILE */
-	
-	/*NEWSLETTER MOBILE*/
-
-	.newsletter {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.newsletter__form {
-		padding: 20px 0;
-	}
-	.newsletter__form input {
-		width: 180px;
-	}
-	/*FIN NEWSLETTER MOBILE*/
-
-	/*FOOTER MOBILE*/
-	footer {
-		flex-direction: column;
-	}
-	/*FIN FOOTER MOBILE*/
-}
-
-/* tablet*/
-@media only screen and (min-width: 426px) and (max-width: 769px){
-	/* INDEX */
-	.inicio {
-		background-image: url(../assets/img/index/main_image_mobile.jpg);
-		height: 100vh;
-	}
-	/* FIN INDEX*/
-	/* PRODUCTOS */
-	.main__video__titulo h1 {
-		font-size: 40px;
-	}
-	.main__productos img {
-    	max-width: 320px;
-	}
-	/* FIN PRODUCTOS */
-	/* COMUNIDAD */
-	.comunidad__reviews iframe {
-		width: 350px;
-	}
-	/* FIN COMUNIDAD */
-	/* NOSOTROS */
-	.main__nosotros {
-		grid-template-columns: 55% 39%;
-	}
-	.main__nosotros__texto1 {
-		font-size: 18px;
-	}
-	.main__nosotros__texto2 {
-		font-size: 14px;
-	}
-	.main__nosotros__info {
-		max-height: fit-content;
-	}
-	/*FIN NOSOTROS*/
-	/* CONTACTO */
-	.main__contacto {
-    	width: 75%;
-	}
-	/*FIN CONTACTO*/
-}
-
-/*ESTO ES PARA LA PAGINA DE TECLADOS, HECHA CON MOBILE FIRST*/
-/*MEDIA QUERY DESKTOP*/
 @media only screen and (min-width: 576px) {
-	.navbar-collapse {
-    	background: none;
-	}
-	.card-img-top {
-        width: 100%;
-        height: 15vw;
-        object-fit: cover;
-    }
-}
+  .navbar-collapse {
+    background: none; }
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover; } }
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth; }
+
+body {
+  /*background: rgb(20,20,22);	                                                 
+	background: radial-gradient(circle, rgba(20,20,22,1) 43%, rgba(0,0,0,1) 100%);*/
+  background: #000000; }
