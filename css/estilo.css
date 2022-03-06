@@ -162,6 +162,9 @@ nav a {
   height: 40%;
   z-index: 1; }
 
+.productos_mobile {
+  max-height: 40vh; }
+
 .producto_img {
   width: 100%;
   height: auto; }
@@ -173,7 +176,7 @@ nav a {
   transition: transform .5s;
   z-index: 2; }
 
-.producto h3 {
+.producto h3, .producto__mobile h3 {
   position: absolute;
   bottom: 0;
   color: #ffffff;
@@ -188,14 +191,6 @@ nav a {
 
 .articulo__titulo {
   letter-spacing: 0.1rem; }
-
-.main__video {
-  position: relative;
-  display: inline-block;
-  text-align: center; }
-
-.main__video video {
-  max-width: 100%; }
 
 .main__video__titulo {
   position: absolute;
@@ -213,6 +208,10 @@ nav a {
   font-size: 60px;
   line-height: 1.2; }
 
+.main__imagen_mobile {
+  min-height: 680px;
+  object-fit: cover; }
+
 .video__overlay {
   background: linear-gradient(0deg, #000000 15%, transparent);
   position: absolute;
@@ -222,22 +221,16 @@ nav a {
   height: 100%;
   z-index: 1; }
 
-.main__imagen_mobile {
-  display: none; }
+.main__producto {
+  max-width: 70%; }
 
-.main__productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  justify-items: center;
-  color: #ffffff;
-  margin-bottom: 70px; }
+.main__producto h3 {
+  font-weight: bold; }
 
-.main__productos__producto {
-  width: fit-content; }
+.main__productos--color {
+  color: #ffffff; }
 
-.main__productos img {
-  max-width: 400px;
+.producto__img {
   border: 1px solid #e50b22; }
 
 .comunidad {
@@ -497,44 +490,22 @@ nav a {
     flex-direction: column; }
   .inicio {
     background-image: url("../assets/img/index/main_image_mobile.jpg");
-    height: 100vh;
+    height: 95vh;
     /*CAMBIO DE IMAGEN INICIO*/ }
-  .inicio__titulo {
-    margin-left: 5%; }
   .inicio__titulo h1 {
     font-size: 30px;
     line-height: 30px; }
   .inicio__titulo h2 {
     font-size: 30px;
     line-height: 30px; }
-  .blog {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr); }
   /*FIN INDEX MOBILE*/
   /*PRODUCTOS MOBILE*/
-  /*CAMBIO DE VIDEO A IMAGEN*/
-  .main__video video {
-    display: none; }
-  .main__imagen_mobile {
-    display: block;
-    width: 100%;
-    position: relative; }
-  .main__imagen_mobile img {
-    width: 100%;
-    min-height: 680px;
-    object-fit: cover; }
   .video__overlay {
     height: 15%; }
   .main__video__titulo {
     bottom: 2%; }
   .main__video__titulo h1 {
     font-size: 40px; }
-  .main__productos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto; }
-  .main__productos img {
-    max-width: 260px; }
   /*FIN PRODUCTOS MOBILE*/
   /*COMUNIDAD MOBILE*/
   .comunidad {
@@ -600,8 +571,6 @@ nav a {
     height: 100vh; }
   .main__video__titulo h1 {
     font-size: 40px; }
-  .main__productos img {
-    max-width: 320px; }
   .comunidad__reviews iframe {
     width: 350px; }
   .main__nosotros {
@@ -626,6 +595,10 @@ nav a {
 * {
   font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth; }
+
+*::selection {
+  background: #e50b22;
+  color: #ffffff; }
 
 body {
   /*background: rgb(20,20,22);	                                                 

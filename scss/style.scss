@@ -17,6 +17,12 @@
 * {
 	font-family: 'Quicksand', sans-serif;
 	scroll-behavior: smooth;
+
+}
+
+*::selection {
+  background: $colorPrimario;
+  color: $colorSecundario;
 }
 
 body {

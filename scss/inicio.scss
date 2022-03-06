@@ -44,6 +44,10 @@
     z-index: 1;
 }
 
+.productos_mobile {
+	max-height: 40vh;
+}
+
 .producto_img {
 	width: 100%;
 	height: auto;
@@ -57,7 +61,8 @@
 	z-index: 2;
 }
 
-.producto h3 {
+
+.producto h3,  .producto__mobile h3 {
 	position: absolute;
 	bottom: 0;
 	color: $colorSecundario;
@@ -67,7 +72,6 @@
 .producto:hover {
 	transform: translateY(-50px);
 }
-
 // FIN PRODUCTOS
 
 // INICIO BLOG

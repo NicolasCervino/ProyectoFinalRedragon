@@ -15,11 +15,8 @@
 	// INDEX MOBILE
 	.inicio {
 		background-image: url("../assets/img/index/main_image_mobile.jpg");
-		height: 100vh;
+		height: 95vh;
 		/*CAMBIO DE IMAGEN INICIO*/
-	}
-	.inicio__titulo {
-		margin-left: 5%;
 	}
 	.inicio__titulo h1 {
 		font-size: 30px;
@@ -29,32 +26,10 @@
 		font-size: 30px;
 		line-height: 30px;
 	}
-	.blog {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 1fr);
-	
-	}
 	/*FIN INDEX MOBILE*/
 
 	/*PRODUCTOS MOBILE*/
 
-	/*CAMBIO DE VIDEO A IMAGEN*/
-	.main__video video {
-    	display: none;
-	}
-
-	.main__imagen_mobile {
-		display: block;
-		width: 100%;
-		position: relative;
-	}
-
-	.main__imagen_mobile img {
-		width: 100%;
-		min-height: 680px;
-		object-fit: cover;
-	}
 	.video__overlay {
 		height: 15%;
 	}
@@ -64,15 +39,6 @@
 	}
 	.main__video__titulo h1 {
 		font-size: 40px;
-	}
-
-	.main__productos {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto auto auto;
-	}
-
-	.main__productos img {
-		max-width: 260px;
 	}
 	/*FIN PRODUCTOS MOBILE*/
 
@@ -184,9 +150,6 @@
 	// PRODUCTOS
 	.main__video__titulo h1 {
 		font-size: 40px;
-	}
-	.main__productos img {
-    	max-width: 320px;
 	}
 	// FIN PRODUCTOS
 	// COMUNIDAD
