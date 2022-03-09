@@ -7,14 +7,13 @@
 	padding: 4px;
 	text-align: left;
 	z-index: 2;
-}
-
-.main__video__titulo h1 {
-	font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 1.2;
+	h1 {
+		font-family: "Montserrat";
+	    font-style: normal;
+	    font-weight: bold;
+	    font-size: 60px;
+	    line-height: 1.2;
+	}
 }
 
 .main__imagen_mobile {
@@ -28,7 +27,7 @@
 	background: linear-gradient(0deg, #000000 15%, transparent);
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: -1px;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -36,16 +35,12 @@
 
 .main__producto {
 	max-width: 70%;
-}
-
-.main__producto h3 {
-	font-weight: bold;
-}
-.main__productos--color {
 	color:$colorSecundario;
-}
-
-.producto__img {
-	border: 1px solid $colorPrimario;
+	h3 {
+		font-weight: bold;
+	}
+	.producto__img {
+		border: 1px solid $colorPrimario;
+	}
 }
 // FIN PRODUCTOS

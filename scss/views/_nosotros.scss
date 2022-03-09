@@ -1,0 +1,67 @@
+// INICIO NOSOTROS
+.nosotros {
+	position: relative;
+	background-image: url(../assets/img/nosotros/nosotros_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+	.nosotros__titulo {
+		position: absolute;
+		bottom: 1px;
+		left: 3%;
+		color: $colorSecundario;
+		font-size: 28px;
+		h1 {
+		    font-family: "Montserrat";
+		    font-style: normal;
+		    font-weight: bold;
+		}
+	}
+}
+
+.main__nosotros {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-template-rows: auto;
+	column-gap: 5%;
+	margin-bottom: 50px;
+	grid-template-areas:
+		"sub sub"
+		"img info";
+	.nosotros__subtitulo {
+		color: $colorSecundario;
+		font-size: 26px;
+		margin-left: 20px;
+		margin-right: 20px;
+		grid-area: sub;
+	}
+	img {
+		max-width: 100%;
+		padding-left: 19px;
+		grid-area: img;
+	}
+	.main__nosotros__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 100%;
+		grid-area: info;
+		.main__nosotros__texto1 {
+			font-size: 24px;
+			color: $colorSecundario;
+			line-height: 26px;
+			margin-bottom: 15px;
+			p {
+				margin: 0;
+			}
+		}
+		.main__nosotros__texto2 {
+			font-size: 18px;
+			color: #808080;
+			line-height: 24px;
+		}
+	}
+}
+// FIN NOSOTROS

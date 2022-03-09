@@ -1,0 +1,46 @@
+// INICIO HEADER
+
+header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%);
+	top: 0;
+	z-index: 999;
+
+	.header__logo img {
+		max-width: 75px;
+		padding: 10px;
+	}
+	.nav__ul {
+		display: flex;
+		list-style: none;
+	}
+	.nav__ul li {
+		padding: 8px;
+	}
+	nav a {
+		text-decoration: none;
+		color: $colorSecundario;
+		font-weight: 600;
+	}
+	// Estos estilos son para la nav hecha en Bootstrap
+	.navbar__background {
+	    background: linear-gradient(180deg, #1D1D1B 0%, rgba(29, 29, 27, 0) 100%);
+	}
+	.navbar-collapse {
+	    background-color: #202020;
+	}
+	.dropdown-menu {
+		background-color: #202020;
+		border: none;
+	}
+	.dropdown-item {
+		color: $colorSecundario;
+	}
+	.dropdown-item:hover {
+		background-color: $colorPrimario;
+		color: $colorSecundario;
+	}
+}

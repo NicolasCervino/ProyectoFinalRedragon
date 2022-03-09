@@ -1,33 +1,16 @@
 // Fuente Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-@import "colores";
-@import "navbar";
-@import "newsletter";
-@import "footer";
+@import "variables";
+@import "root";
+@import "components/navbar";
+@import "components/newsletter";
+@import "components/footer";
 
-@import "inicio";
-@import "productos";
-@import "comunidad";
-@import "nosotros";
-@import "contacto";
-@import "teclados";
-@import "mq";
-
-* {
-	font-family: 'Quicksand', sans-serif;
-	scroll-behavior: smooth;
-
-}
-
-*::selection {
-  background: $colorPrimario;
-  color: $colorSecundario;
-}
-
-body {
-	/*background: rgb(20,20,22);	                                                 
-	background: radial-gradient(circle, rgba(20,20,22,1) 43%, rgba(0,0,0,1) 100%);*/
-	background: #000000;
-}
-
+@import "views/inicio";
+@import "views/productos";
+@import "views/comunidad";
+@import "views/nosotros";
+@import "views/contacto";
+@import "views/teclados";
+@import "mediaQueries";
