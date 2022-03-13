@@ -2,9 +2,7 @@
 .contacto {
 	position: relative;
 	background-image: url(../assets/img/contacto/contacto_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	@include background-settings;
     width: 100%;
     height: 95vh;
 	.contacto__titulo {
@@ -94,8 +92,10 @@
 		}
 	}
 }
+
 .form__boton:hover {
-	background-color: $colorPrimario;
+	cursor: pointer;
+	background: $colorPrimario!important;
 }
 
 /* CLASES PARA ASIGNAR GRID AREA */

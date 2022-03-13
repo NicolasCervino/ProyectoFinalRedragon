@@ -12,6 +12,10 @@ footer {
 	height: 150px
 }
 
+.footer__social {
+	display: flex;
+}
+
 .footer__social img {
 	padding: 3px;
 	margin: 3px;
@@ -21,3 +25,18 @@ footer {
 	text-decoration: none;
 }
 // FIN FOOTER
+
+// Map
+$redes:(
+    facebook: #3a5795,
+    twitter:#55acee,
+    instagram: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d),
+    twitch: #6441a5,
+    linkedin: #0077b5
+);
+// Each
+@each $red, $color in $redes {
+    .btn--#{$red}:hover {
+    	background: $color;
+    }
+}

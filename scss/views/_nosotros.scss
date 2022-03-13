@@ -2,9 +2,7 @@
 .nosotros {
 	position: relative;
 	background-image: url(../assets/img/nosotros/nosotros_background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include background-settings;
     width: 100%;
     height: 85vh;
 	.nosotros__titulo {

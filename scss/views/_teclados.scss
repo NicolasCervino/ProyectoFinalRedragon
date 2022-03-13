@@ -6,11 +6,11 @@
     object-position: 50% 50%;
 }
 
-.carousel-caption {
+.producto__titulo {
     left: 2%;
 }
 
-.carousel-caption h2 {
+.producto__titulo--h2 {
     margin-bottom: 0;
     font-family: "Montserrat";
     font-style: normal;
@@ -18,17 +18,22 @@
     font-size: 40px;
     line-height: 44px;            
 }
-.carousel-caption h3 { 
-    margin-top: 0;
-    font-family: "Montserrat";
-    font-style: normal;
+.producto__titulo h3 { 
+    @extend .producto__titulo--h2;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 44px;
 }
 
 .teclados__titulo h1 {
     font-family: "Montserrat";
     color: $colorSecundario;
     padding: 15px;
+}
+
+.product_overlay {
+    background: linear-gradient(0deg, #000000 15%, transparent);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 19%;
 }

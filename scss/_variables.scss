@@ -1,2 +1,9 @@
 $colorPrimario:#e50b22;
 $colorSecundario:#ffffff;
+
+//Mixing
+@mixin background-settings {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
