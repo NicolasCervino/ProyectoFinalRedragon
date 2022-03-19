@@ -15,115 +15,172 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Link Normalize -->
 	<link rel="stylesheet" href="../css/normalize.css">
+	<!-- Link Bootstrap 4.6-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- Link Estilo CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 	<!-- Comienzo Header -->
-	<header>
-		<!-- Logo -->
-		<div class="header__logo">
-			<a href="../index.html">
-				<img src="../assets/img/logo_redragon.png" alt="logo">
-			</a>
+	<header class="container-fluid">
+	<!-- NAVBAR -->
+		<div class="row">
+			<div class="col-lg-12 col-12 p-0">
+				<nav class="navbar navbar-expand-sm fixed-top navbar-dark navbar__background">
+					<!-- LOGO NAVBAR -->
+					<a class="navbar-brand" href="#">
+						<img src="../assets/img/logo_redragon.png" width="75px" class="d-inline-block align-top" alt="Logo Redragon">
+					</a>
+					<!-- BOTON NAVBAR -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+			  		</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<!-- ENLACES NAVBAR -->
+						<ul class="navbar-nav ml-auto text-center">
+					      <li class="nav-item">
+					        <a class="nav-link" href="../index.html">Inicio</a>
+					      </li>
+					      <!-- ENLACE CON MENU -->
+					      <li class="nav-item pl-2 pl-sm-0 dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+					          Productos
+					        </a>
+					        <div class="dropdown-menu text-center text-sm-left" aria-labelledby="navbarDropdownMenuLink">
+					        	<a class="dropdown-item" href="teclados.html">Teclados</a>
+					        	<a class="dropdown-item" href="ratones.html">Ratones</a>
+					        	<a class="dropdown-item" href="audifonos.html">Audifonos</a>
+					        	<a class="dropdown-item" href="gabinetes.html">Gabinetes</a>
+					        	<div class="dropdown-divider"></div>
+					        	<a class="dropdown-item" href="productos.html">Productos</a>
+					        </div>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="comunidad.html">Comunidad</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="nosotros.html">Nosotros</a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">Contacto</a>
+					      </li>
+					    </ul>
+					</div>
+				</nav>
+			</div>
 		</div>
-		<!-- Comienzo Nav -->
-		<nav>
-			<ul class="nav__ul">
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="comunidad.html">Comunidad</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
 	</header>
 	<!-- Comienzo Main -->
-	<main>
-		<div class="contacto">
-			<div class="contacto__titulo">
-				<h1>SOPORTE / CONTACTO</h1>
-			</div>
-			<div class="contacto__overlay"></div>
-		</div>
-		<div data-aos="fade-up" class="main__contacto">
-			<div class="main__contacto__subtitulo">
-				<h2>¿NECESITAS AYUDA?</h2>
-				<div class="main__contacto__texto">
-					<h3>Escríbenos y completa el formulario para que podamos ayudarte.</h3>
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-12 contacto">
+				<div class="contacto__titulo">
+					<h1>SOPORTE / CONTACTO</h1>
 				</div>
+				<div class="contacto__overlay"></div>
+			</div>
+		</div>
+		<div data-aos="fade-up" class="main__contacto my-4 row d-flex justify-content-around">
+			<!-- Info Formulario -->
+			<div class="col-sm-3 col-12 text-sm-left text-center">
+				<h2 class="contacto__subtitulo">¿NECESITAS AYUDA?</h2>
+				<h3 class="contacto__subtitulo__info">Escríbenos y completa el formulario para que podamos ayudarte.</h3>
 			</div>
 			<!-- Formulario -->
-			<form action="#" class="main__contacto__form">
-				<!-- Pais -->
-				<label for="pais" class="contacto__form__label form__pais--gridArea">País:
-					<input type="text" placeholder="DÍNOS TU PAIS..." name="pais" required>
-				</label>
-				<!-- Ciudad -->
-				<label for="ciudad" class="contacto__form__label form__ciudad--gridArea">Ciudad:
-					<input type="text" placeholder="DÍNOS TU CIUDAD..." name="ciudad" required>
-				</label>
-				<!-- Nombre -->
-				<label for="nombre" class="contacto__form__label form__nombre--gridArea">Nombre:
-					<input type="text" placeholder="EJ. FELIPE" name="nombre" required>
-				</label>
-				<!-- Apellido -->
-				<label for="apellido" class="contacto__form__label form__apellido--gridArea">Apellido:
-					<input type="text" placeholder="EJ. RODRIGUEZ" name="apellido" required>
-				</label>
-				<!-- Email -->
-				<label for="email" class="contacto__form__label form__email--gridArea">Correo Electronico:
-					<input type="email" placeholder="EJ. FELIPE@MAIL.COM" name="email" required>
-				</label>
-				<!-- Consulta -->
-				<textarea name="Consulta" id="" class="form__consulta form__consulta--gridArea" placeholder="Motivo por el que necesitas comunicarte con nosotros" required></textarea>
-				<!-- Boton Enviar -->
-				<input type="submit" value="Enviar" class="form__boton form__boton--gridArea">
-			</form>
+			<div class="col-sm-5 col-12 d-flex justify-content-center">
+				<form class="row" action="#">
+					<!-- Pais -->
+					<div class="col-6 d-flex flex-column">
+						<label class="contacto__label" for="pais">País:</label>
+						<input class="contacto__input" type="text" placeholder="DÍNOS TU PAIS..." name="pais" required>
+					</div>
+					<!-- Ciudad -->
+					<div class="col-6 d-flex flex-column">
+						<label class="contacto__label" for="ciudad">Ciudad:</label>
+						<input class="contacto__input" type="text" placeholder="DÍNOS TU CIUDAD..." name="ciudad" required>
+					</div>
+					<!-- Nombre -->
+					<div class="col-6 d-flex flex-column">
+						<label class="contacto__label" for="nombre">Nombre:</label>
+						<input class="contacto__input" type="text" placeholder="EJ. FELIPE" name="nombre" required>
+					</div>
+					<!-- Apellido -->
+					<div class="col-6 d-flex flex-column">
+						<label class="contacto__label" for="apellido">Apellido:</label>
+						<input class="contacto__input" type="text" placeholder="EJ. RODRIGUEZ" name="apellido" required>
+					</div>
+					<!-- Email -->
+					<div class="col-12 d-flex flex-column pb-3">
+						<label class="contacto__label" for="email">Email:</label>
+						<input class="contacto__input" type="email" placeholder="EJ. FELIPE@MAIL.COM" name="email" required>
+					</div>
+					<!-- Consulta -->
+					<div class="col-12">
+						<textarea class="w-100 contacto__input" name="Consulta" placeholder="Motivo por el que necesitas comunicarte con nosotros" required></textarea>
+					</div>
+					<!-- Boton Enviar -->
+					<div class="col-12">
+						<input class="contacto__btn w-100" type="submit" value="Enviar">
+					</div>
+				</form>
+			</div>
 		</div>
-	<!-- Comienzo Newsletter -->
-	<div class="newsletter">
-		<div class="newsletter__info">
-			<h3 class="newsletter__info__titulo">NOTICIAS REDRAGON</h3>
-			<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
-		</div>
-		<form action="#" class="newsletter__form">
-			<input type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
-			<button type="submit" class=newsletter__form__button>
-				<img src="../assets/img/newsletter/send_button.png">
-			</button>
-		</form>
-	</div>
-	<!-- Fin Newsletter -->
 	</main>
-	<!-- Comienzo Footer -->
-	<footer class="footer">
-		<!-- Logo Footer -->
-		<div class="footer__logo">
-			<img src="../assets/img/footer/logo_footer.png">
+	<!-- NEWSLETTER -->
+	<div class="newsletter container-fluid pt-3 pb-3">
+		<div class="row d-flex justify-content-center align-items-center">
+			<!-- INFO NEWSLETTER -->
+			<div class="col-sm-5 col-12">
+				<div class="newsletter__info">
+					<h3>NOTICIAS REDRAGON</h3>
+					<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
+				</div>
+			</div>
+			<!-- FORM NEWSLETTER -->
+			<div class="d-flex justify-content-center align-items-center col-sm-5 col-12">
+				<form class="d-flex" action="#">
+					<input class="newsletter__form__input" type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
+					<button class="newsletter__form__button" type="submit">
+						<img src="../assets/img/newsletter/send_button.png">
+					</button>
+				</form>
+			</div>
 		</div>
-		<!-- Redes Sociales -->
-		<div class="footer__social">
-			<!-- Facebook -->
-			<a href="https://redragon.es/facebook" target="_blank" class="btn--facebook">
-				<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
-			</a>
-			<!-- Twitter -->
-			<a href="https://redragon.es/twitter" target="_blank" class="btn--twitter">
-				<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
-			</a>
-			<!-- Instagram -->
-			<a href="https://redragon.es/IG" target="_blank" class="btn--instagram">
-				<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
-			</a>
-			<!-- Twitch -->
-			<a href="https://redragon.es/twitch" target="_blank" class="btn--twitch">
-				<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
-			</a>
-			<!-- LinkedIn -->
-			<a href="https://www.linkedin.com" target="_blank" class="btn--linkedin">
-				<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
-			</a>
+	</div>
+	<!-- FOOTER -->
+	<footer class="container-fluid pb-4 pt-4">
+		<div class="row">
+			<!-- LOGO -->
+			<div class="col-sm-6 col-12">
+				<div class="d-flex justify-content-center">
+					<img src="../assets/img/footer/logo_footer.png">
+				</div>
+			</div>
+			<!-- REDES SOCIALES -->
+			<div class="col-sm-6 col-12">
+				<div class="d-flex justify-content-center footer__social">
+					<!-- Facebook -->
+					<a href="https://redragon.es/facebook" target="_blank" class="btn--facebook">
+						<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
+					</a>
+					<!-- Twitter -->
+					<a href="https://redragon.es/twitter" target="_blank" class="btn--twitter">
+						<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
+					</a>
+					<!-- Instagram -->
+					<a href="https://redragon.es/IG" target="_blank" class="btn--instagram">
+						<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
+					</a>
+					<!-- Twitch -->
+					<a href="https://redragon.es/twitch" target="_blank" class="btn--twitch">
+						<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
+					</a>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com" target="_blank" class="btn--linkedin">
+						<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- AOS SCRIPT -->
@@ -131,5 +188,8 @@
 	<script>
     	AOS.init();
 	</script>
+	<!-- JS BOOTSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,19 +3,6 @@ footer {
 	background-color: #000000;
 }
 
-// Esta clase es para el footer sin bootstrap
-.footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #000000;
-	height: 150px
-}
-
-.footer__social {
-	display: flex;
-}
-
 .footer__social img {
 	padding: 3px;
 	margin: 3px;

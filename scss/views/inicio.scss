@@ -66,6 +66,7 @@
 		color: $colorSecundario;
 		font-size: 20px;
 		cursor: pointer;
+		user-select: none;
 	}
 }
 .producto:hover {
@@ -79,10 +80,21 @@
 	margin: 15px;
 }
 
-.articulo__titulo {
-	letter-spacing: 0.1rem;
+.articulo:hover {
+	transition: transform .5s;
+	transform: scale(0.95);
+	border-bottom-left-radius: 15px !important;
+	border-bottom-right-radius: 15px !important;
+}
+.articulo__link, .articulo__link:hover {
+	text-decoration: none;
+	color: #000000;
 }
 
+.articulo__titulo {
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+}
 // FIN BLOG
 
 // FIN INDEX

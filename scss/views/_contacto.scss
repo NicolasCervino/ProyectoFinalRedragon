@@ -7,21 +7,21 @@
     height: 95vh;
 	.contacto__titulo {
 		position: absolute;
-		bottom: 1px;
+		bottom: 4%;
 		left: 3%;
 		color: $colorSecundario;
-		font-size: 28px;
 		z-index: 2;
 		h1 {
 			font-family: "Montserrat";
 		    font-style: normal;
 		    font-weight: bold;
+			font-size: 50px;
 		}
 	}
 	.contacto__overlay {
 		background: linear-gradient(360deg, #000000 33.52%, rgba(29, 29, 27, 0) 100%);
 	    position: absolute;
-	    bottom: 0;
+	    bottom: -1px;
 	    left: 0;
 	    width: 100%;
 	    height: 10%;
@@ -30,102 +30,43 @@
 }
 
 .main__contacto {
-	margin: 90px 0;
-	color: $colorSecundario;
-	display: grid;
-	grid-template-columns: 40% auto;
-	grid-template-rows: auto;
-	align-items: start;
-	justify-items: center;
-	gap: 14%;
-	.main__contacto__subtitulo {
-		max-width: 80%;
-		font-size: 20px;
-		line-height: 30px;
-		.main__contacto__texto {
-			font-size: 14px;
-			color: #808080;
-			line-height: 24px;
-		}
-	}
-	.main__contacto__form {
-		display: grid;
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-		"pais ciudad"
-		"nombre apellido"
-		"email email"
-		"mensaje mensaje"
-		"enviar enviar";
-		gap: 15px;
-		padding: 25px;
-		width: 80%;
-		// ESTO SE REFIERE AL LABEL
-		.contacto__form__label {
-			display: flex;
-			flex-direction: column;
-			max-width: 100%;
-			// ESTO SE REFIERE AL INPUT
-			input {
-				margin: 10px 0;
-				background: transparent;
-				border: none;
-				border-bottom: 1px solid $colorSecundario;
-				color: $colorSecundario;
-				padding: 6px 0;
-			}
-		}
-		// ESTO SE REFIERE AL TEXT-AREA
-		.form__consulta {
-			resize: none;
-			max-width: 100%;
-			background: transparent;
-			border: none;
-			border-bottom: 1px solid $colorSecundario;
-			color: $colorSecundario;
-		}
-		.form__boton {
-			background: transparent;
-			color: $colorSecundario;
-			border: 2px solid $colorSecundario;
-		}
-	}
+	padding: 5% 0 6% 0;
+}
+.contacto__subtitulo {
+	color: white;
+    font-weight: bold;
+    padding-bottom: 11px;
 }
 
-.form__boton:hover {
+.contacto__subtitulo__info {
+    font-size: 17px;
+    color: #808080;
+    line-height: 24px;
+    padding: 5px 0;
+}
+
+.contacto__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorSecundario;
+    margin-bottom: 8px;
+    color: $colorSecundario;
+}
+
+.contacto__label {
+	color: $colorSecundario;
+	font-size: 18px;
+}
+
+.contacto__btn {
+	color: $colorSecundario;
+    background: transparent;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.contacto__btn:hover {
 	cursor: pointer;
 	background: $colorPrimario!important;
 }
-
-/* CLASES PARA ASIGNAR GRID AREA */
-.form__pais--gridArea {
-	grid-area: pais;
-}
-
-.form__ciudad--gridArea {
-	grid-area: ciudad;
-}
-
-.form__nombre--gridArea {
-	grid-area: nombre;
-}
-
-.form__apellido--gridArea {
-	grid-area: apellido;
-}
-
-.form__email--gridArea {
-	grid-area: email;
-}
-
-.form__consulta--gridArea {
-	grid-area: mensaje;
-}
-
-.form__boton--gridArea {
-	grid-area: enviar;
-}
-// FIN CLASES PARA ASIGNAR GRID AREA
-
 // FIN CONTACTO

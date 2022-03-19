@@ -1,30 +1,17 @@
 //  MEDIA QUERYS
 // mobile
 @media only screen and (max-width: 426px) {
-	header {
-		flex-direction: column;
-		nav {
-			display: none;
-			// Esto es temporal hasta implementar menu mobile
-			.nav__ul {
-				flex-direction: column;
-			}
-		}
-	}
 	// INDEX MOBILE
 	.inicio {
 		background-image: url("../assets/img/index/main_image_mobile.jpg");
 		height: 95vh;
-		/*CAMBIO DE IMAGEN INICIO*/
 	}
-	/*FIN INDEX MOBILE*/
+	// FIN INDEX MOBILE
 
 	// PRODUCTOS MOBILE
-
 	.video__overlay {
 		height: 15%;
 	}
-
 	.main__video__titulo {
 		bottom: 2%;
 		h1 {
@@ -38,15 +25,10 @@
 		background-image: url(../assets/img/comunidad/comunidad_background_mobile.jpg);
 		height: 90vh;
 		.comunidad__titulo {
-			font-size: 23px;
 			bottom: 5%;
-		}
-	}
-	.comunidad__reviews {
-		flex-direction: column;
-		align-items: center;
-		iframe {
-			width: 380px;
+			h1 {
+				font-size: 38px;
+			}
 		}
 	}
 	/*FIN COMUNIDAD MOBILE*/
@@ -54,8 +36,8 @@
 	/*NOSOTROS MOBILE*/
 	.nosotros {
 		background-image: url(../assets/img/nosotros/nosotros_background_mobile.jpg);
-		.nosotros__titulo {
-			font-size: 22px;
+		.nosotros__titulo h1 {
+			font-size: 40px;
 		}
 	}
 	.main__nosotros {
@@ -66,6 +48,9 @@
 		"sub"
 		"img" 
 		"info";
+		.nosotros__subtitulo {
+			font-size: 32px;
+		}
 		img {
 	    	max-width: 90%;
 	    	padding: 0;
@@ -86,45 +71,17 @@
 	/* CONTACTO MOBILE */
 	.contacto {
 		background-image: url(../assets/img/contacto/contacto_background_mobile.jpg);
-		.contacto__titulo {
-			font-size: 30px;
-		}
-	}
-
-	.main__contacto {
-		grid-template-rows: 20% auto;
-		grid-template-columns: auto;
-		margin: 10% 0 25% 0;
-		.main__contacto__subtitulo {
-			text-align: center;
-			max-width: 100%;
-		}
-		.main__contacto__form {
-			justify-content: center;
+		.contacto__titulo h1 {
+			font-size: 43px;
 		}
 	}
 	// FIN CONTACTO MOBILE
 	
 	// NEWSLETTER MOBILE
-
-	.newsletter {
-		flex-direction: column;
-		align-items: center;
-		.newsletter__form {
-			padding: 20px 0;
-			input {
-				width: 180px;
-			}
-		}
+	.newsletter__form__input {
+		min-width: 200px;
 	}
-
 	// FIN NEWSLETTER MOBILE
-
-	// FOOTER MOBILE
-	footer {
-		flex-direction: column;
-	}
-	/*FIN FOOTER MOBILE*/
 }
 
 // tablet
@@ -140,33 +97,38 @@
 		font-size: 40px;
 	}
 	// FIN PRODUCTOS
-	// COMUNIDAD
-	.comunidad__reviews iframe {
-		width: 350px;
-	}
-	// FIN COMUNIDAD
 	// NOSOTROS
 	.main__nosotros {
-		grid-template-columns: 55% 39%;
-	}
-	.main__nosotros__texto1 {
-		font-size: 18px;
-	}
-	.main__nosotros__texto2 {
-		font-size: 14px;
-	}
-	.main__nosotros__info {
-		max-height: fit-content;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		justify-items: center;
+		grid-template-areas:
+		"sub"
+		"img" 
+		"info";
+		.nosotros__subtitulo {
+			font-size: 32px;
+			justify-self: left;
+		}
+		img {
+	    	max-width: 90%;
+	    	padding: 0;
+		}
+		.main__nosotros__info {
+			padding: 5%;
+			justify-content: normal;
+			.main__nosotros__texto1 p {
+				font-size: 20px;
+			}
+			.main__nosotros__texto2{
+				font-size: 15px;
+			}
+		}
 	}
 	// FIN NOSOTROS
-	// CONTACTO
-	.main__contacto {
-    	width: 75%;
-	}
-	// FIN CONTACTO
 }
 
-// ESTO ES PARA LA PAGINA DE TECLADOS, HECHA CON MOBILE FIRST
+// ESTO ES PARA LAS PAGINAS DE PRODUCTOS, HECHAS CON MOBILE FIRST
 // MEDIA QUERY DESKTOP
 @media only screen and (min-width: 576px) {
 	header .navbar-collapse {
