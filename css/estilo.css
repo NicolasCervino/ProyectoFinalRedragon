@@ -203,12 +203,23 @@ footer {
   z-index: 1; }
 
 .main__producto {
-  max-width: 70%;
-  color: #ffffff; }
+  max-width: 70%; }
+  .main__producto a:hover {
+    text-decoration: none; }
   .main__producto h3 {
-    font-weight: bold; }
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none; }
   .main__producto .producto__img {
-    border: 1px solid #e50b22; }
+    border: 2px solid #505050;
+    border-radius: 2px; }
+
+.main__producto:hover {
+  transition: transform .5s;
+  transform: scale(0.9); }
+  .main__producto:hover img {
+    border: 2px solid #e50b22; }
 
 .comunidad {
   position: relative;

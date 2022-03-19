@@ -21,8 +21,6 @@
 	object-fit: cover;
 }
 
-// OVERLAY PRODUCTOS
-
 .video__overlay {
 	background: linear-gradient(0deg, #000000 15%, transparent);
     position: absolute;
@@ -35,12 +33,26 @@
 
 .main__producto {
 	max-width: 70%;
-	color:$colorSecundario;
+	a:hover {
+		text-decoration: none;
+	}
 	h3 {
+		color:$colorSecundario;
 		font-weight: bold;
+		cursor: pointer;
+		user-select: none;
 	}
 	.producto__img {
-		border: 1px solid $colorPrimario;
+		border: 2px solid #505050;
+		border-radius: 2px;
 	}
+}
+
+.main__producto:hover {
+	transition: transform .5s;
+    transform: scale(0.90);
+    img {
+    	border: 2px solid $colorPrimario;
+    }
 }
 // FIN PRODUCTOS
