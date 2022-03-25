@@ -34,6 +34,10 @@
 	/*FIN COMUNIDAD MOBILE*/
 
 	/*NOSOTROS MOBILE*/
+	header {
+		flex-wrap:wrap;
+		justify-content:center;
+	}
 	.nosotros {
 		background-image: url(../assets/img/nosotros/nosotros_background_mobile.jpg);
 		.nosotros__titulo h1 {
@@ -65,6 +69,20 @@
 				font-size: 15px;
 			}
 		}
+	}
+	.newsletterNoBS {
+		flex-direction: column;
+		align-items: center;
+		.newsletter__form {
+			padding: 20px 0;
+			input {
+				width: 180px;
+			}
+		}
+	}
+	// FOOTER MOBILE
+	.footer {
+		flex-direction: column;
 	}
 	/*FIN NOSOTROS MOBILE*/
 
@@ -124,6 +142,12 @@
 				font-size: 15px;
 			}
 		}
+	}
+	.newsletterNoBS {
+		flex-wrap: wrap;
+	}
+	.newsletter__form {
+		padding-bottom: 20px;
 	}
 	// FIN NOSOTROS
 }

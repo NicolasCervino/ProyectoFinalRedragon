@@ -15,144 +15,97 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Link Normalize -->
 	<link rel="stylesheet" href="../css/normalize.css">
-	<!-- Link Bootstrap 4.6-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- Link Estilo CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 	<!-- Comienzo Header -->
-	<header class="container-fluid">
-	<!-- NAVBAR -->
-		<div class="row">
-			<div class="col-lg-12 col-12 p-0">
-				<nav class="navbar navbar-expand-sm fixed-top navbar-dark navbar__background">
-					<!-- LOGO NAVBAR -->
-					<a class="navbar-brand" href="#">
-						<img src="../assets/img/logo_redragon.png" width="75px" class="d-inline-block align-top" alt="Logo Redragon">
-					</a>
-					<!-- BOTON NAVBAR -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-			  		</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-						<!-- ENLACES NAVBAR -->
-						<ul class="navbar-nav ml-auto text-center">
-					      <li class="nav-item">
-					        <a class="nav-link" href="../index.html">Inicio</a>
-					      </li>
-					      <!-- ENLACE CON MENU -->
-					      <li class="nav-item pl-2 pl-sm-0 dropdown">
-					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-					          Productos
-					        </a>
-					        <div class="dropdown-menu text-center text-sm-left" aria-labelledby="navbarDropdownMenuLink">
-					        	<a class="dropdown-item" href="teclados.html">Teclados</a>
-					        	<a class="dropdown-item" href="ratones.html">Ratones</a>
-					        	<a class="dropdown-item" href="audifonos.html">Audifonos</a>
-					        	<a class="dropdown-item" href="gabinetes.html">Gabinetes</a>
-					        	<div class="dropdown-divider"></div>
-					        	<a class="dropdown-item" href="productos.html">Productos</a>
-					        </div>
-					      </li>
-					      <li class="nav-item">
-					        <a class="nav-link" href="comunidad.html">Comunidad</a>
-					      </li>
-					      <li class="nav-item active">
-					        <a class="nav-link" href="#">Nosotros</a>
-					      </li>
-					      <li class="nav-item">
-					        <a class="nav-link" href="contacto.html">Contacto</a>
-					      </li>
-					    </ul>
-					</div>
-				</nav>
-			</div>
+	<header>
+		<!-- Logo -->
+		<div class="header__logo">
+			<a href="../index.html">
+				<img src="../assets/img/logo_redragon.png" alt="logo">
+			</a>
 		</div>
+		<!-- Comienzo Nav -->
+		<nav>
+			<ul class="nav__ul">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="comunidad.html">Comunidad</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
 	</header>
 	<!-- Comienzo Main -->
-	<main class="container-fluid">
-		<div class="row">	
-			<div class="col-12 nosotros">
-				<div class="nosotros__titulo">
-					<h1>SOMOS REDRAGON</h1>
+	<main>
+		<div class="nosotros">
+			<div class="nosotros__titulo">
+				<h1>SOMOS REDRAGON</h1>
+			</div>
+		</div>
+		<div data-aos="fade-up" class="main__nosotros">
+			<div class="nosotros__subtitulo">
+				<h2>Acerca de nosotros</h2>
+			</div>
+			<img src="../assets/img/nosotros/quienes_somos.jpg">
+			<div class="main__nosotros__info">
+				<!-- TEXTO 1 -->
+				<div class="main__nosotros__texto1">
+					<p>“¿Cuál es el último juego que jugaste?”. Generalmente, con esa pregunta comenzamos las entrevistas laborales en Redragon.</p>
+				</div>
+				<!-- TEXTO 2 -->
+				<div class="main__nosotros__texto2">	
+					<p>Por supuesto, es solo una manera de romper el hielo, pero ilustra bien el espíritu de nuestra gran familia: antes que cualquier otra cosa, somos gamers. Y por eso mismo, pese a que estamos en distintas partes del mundo, hablamos todos el mismo idioma.<br>
+					Aunque llevamos varios años más haciendo lo que hacemos, nuestro nacimiento oficial fue en 2012, cuando nos constituimos como la división gamer de ETT, una marca con larga trayectoria en la fabricación de componentes de computadoras. No llegamos al rubro por azar; nacimos en él y lo llevamos en nuestro ADN.
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div data-aos="fade-up" class="col-12 p-0 main__nosotros py-4">
-				<h2 class="nosotros__subtitulo p-3">Acerca de nosotros</h2>
-				<img src="../assets/img/nosotros/quienes_somos.jpg">
-				<div class="main__nosotros__info">
-					<!-- TEXTO 1 -->
-					<div class="main__nosotros__texto1">
-						<p>“¿Cuál es el último juego que jugaste?”. Generalmente, con esa pregunta comenzamos las entrevistas laborales en Redragon.</p>
-					</div>
-					<!-- TEXTO 2 -->
-					<div class="main__nosotros__texto2">	
-						<p>Por supuesto, es solo una manera de romper el hielo, pero ilustra bien el espíritu de nuestra gran familia: antes que cualquier otra cosa, somos gamers. Y por eso mismo, pese a que estamos en distintas partes del mundo, hablamos todos el mismo idioma.<br>
-						Aunque llevamos varios años más haciendo lo que hacemos, nuestro nacimiento oficial fue en 2012, cuando nos constituimos como la división gamer de ETT, una marca con larga trayectoria en la fabricación de componentes de computadoras. No llegamos al rubro por azar; nacimos en él y lo llevamos en nuestro ADN.
-						</p>
-					</div>
-				</div>
-			</div>
+	<!-- Comienzo Newsletter -->
+	<div class="newsletterNoBS">
+		<div class="newsletter__info">
+			<h3 class="newsletter__info__titulo">NOTICIAS REDRAGON</h3>
+			<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
 		</div>
-	</main>
-	<!-- NEWSLETTER -->
-	<div class="newsletter container-fluid pt-3 pb-3">
-		<div class="row d-flex justify-content-center align-items-center">
-			<!-- INFO NEWSLETTER -->
-			<div class="col-sm-5 col-12">
-				<div class="newsletter__info">
-					<h3>NOTICIAS REDRAGON</h3>
-					<p>Entérate de las novedades más resonantes del mundo Redragon: eventos, lanzamientos, proyectos; información relevante y actualizada que no te querrás perder.</p>
-				</div>
-			</div>
-			<!-- FORM NEWSLETTER -->
-			<div class="d-flex justify-content-center align-items-center col-sm-5 col-12">
-				<form class="d-flex" action="#">
-					<input class="newsletter__form__input" type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
-					<button class="newsletter__form__button" type="submit">
-						<img src="https://icongr.am/material/send.svg?size=30&color=ffffff">
-					</button>
-				</form>
-			</div>
-		</div>
+		<form action="#" class="newsletter__form">
+			<input type="email" name="email" placeholder="Email (ej: correo@gmail.com)" required>
+			<button type="submit" class=newsletter__form__button>
+				<img src="https://icongr.am/material/send.svg?size=30&color=ffffff">
+			</button>
+		</form>
 	</div>
-	<!-- FOOTER -->
-	<footer class="container-fluid pb-4 pt-4">
-		<div class="row">
-			<!-- LOGO -->
-			<div class="col-sm-6 col-12">
-				<div class="d-flex justify-content-center">
-					<img src="../assets/img/footer/logo_footer.png">
-				</div>
-			</div>
-			<!-- REDES SOCIALES -->
-			<div class="col-sm-6 col-12">
-				<div class="d-flex justify-content-center footer__social">
-					<!-- Facebook -->
-					<a href="https://redragon.es/facebook" target="_blank" class="btn--facebook">
-						<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
-					</a>
-					<!-- Twitter -->
-					<a href="https://redragon.es/twitter" target="_blank" class="btn--twitter">
-						<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
-					</a>
-					<!-- Instagram -->
-					<a href="https://redragon.es/IG" target="_blank" class="btn--instagram">
-						<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
-					</a>
-					<!-- Twitch -->
-					<a href="https://redragon.es/twitch" target="_blank" class="btn--twitch">
-						<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
-					</a>
-					<!-- LinkedIn -->
-					<a href="https://www.linkedin.com" target="_blank" class="btn--linkedin">
-						<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
-					</a>
-				</div>
-			</div>
+	<!-- Fin Newsletter -->
+	</main>
+	<!-- Comienzo Footer -->
+	<footer class="footer">
+		<!-- Logo Footer -->
+		<div class="footer__logo">
+			<img src="../assets/img/footer/logo_footer.png">
+		</div>
+		<!-- Redes Sociales -->
+		<div class="footer__social">
+			<!-- Facebook -->
+			<a href="https://redragon.es/facebook" target="_blank" class="btn--facebook">
+				<img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="logo-facebook">
+			</a>
+			<!-- Twitter -->
+			<a href="https://redragon.es/twitter" target="_blank" class="btn--twitter">
+				<img src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="logo-twitter">
+			</a>
+			<!-- Instagram -->
+			<a href="https://redragon.es/IG" target="_blank" class="btn--instagram">
+				<img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="logo-instagram">
+			</a>
+			<!-- Twitch -->
+			<a href="https://redragon.es/twitch" target="_blank" class="btn--twitch">
+				<img src="https://icongr.am/fontawesome/twitch.svg?size=30&color=ffffff" alt="logo-twitch">
+			</a>
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com" target="_blank" class="btn--linkedin">
+				<img src="https://icongr.am/fontawesome/linkedin.svg?size=30&color=ffffff" alt="logo-linkedin">
+			</a>
 		</div>
 	</footer>
 	<!-- AOS SCRIPT -->
@@ -160,8 +113,5 @@
 	<script>
     	AOS.init();
 	</script>
-	<!-- JS BOOTSTRAP -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
